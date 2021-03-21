@@ -1,1 +1,5 @@
-Django~= 2.2.4
+Requirement are:
+Django (to install go to cmd and type pip install django)
+boostrap Framework
+python Language
+HTML, CSS and JS (not necessary)
