@@ -1,0 +1,58 @@
+{% load static %}
+<!Doctype html>
+<html>
+
+<head>
+    <title>Online Banking System</title>
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+    <link href="//fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="{% static 'css/bank.css' %}">
+</head>
+
+<body>
+    <div class="page-header " style="display: flex;">
+        <h2 style="text-decoration: none; font-style: normal; color: rgb(247, 244, 244);"><a href="/">Online Banking System</a></h2>
+        <form class="d-flex">
+            <input class="form-control me-2 " style="width: auto;" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+    </div>
+    <div class="content container">
+        <div class="row">
+            <div>
+                {% block content%} {%endblock%}
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+
+
+
+    <style>
+        .txt {
+            color: rgb(221, 219, 219);
+            font-size: small;
+        }
+    </style>
+
+    <br><br>
+
+    <footer class="footer bg-gray-700 relative pt-0.5 border-b-2 mt-100" style="background-color: rgb(56, 64, 87);">
+        <div class="container mx-auto px-1">
+            <div class="mt-5 flex flex-col items-center">
+                <div class="sm:w-2/3 text-center py-3">
+                    <p class="text-md font-bold mb-2 text-white">
+                        <div class="copyright txt">
+                            Copyright &copy;2021 www.bankingsystem.com All rights reserved!
+                        </div>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

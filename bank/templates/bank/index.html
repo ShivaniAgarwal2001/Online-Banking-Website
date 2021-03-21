@@ -1,0 +1,26 @@
+{% extends 'bank/base.html' %} {% block content %}
+<div class="container mx-auto flex flex-col md:flex-row items-center my-4 md:my-4" style="display: flex;">
+
+    <!--Left Col-->
+    <div class="flex flex-row w-full lg:w-1/2 justify-center items-start pt-12 pb-24 px-6">
+        <h1 class="font-bold text-4xl my-4">Welcome to Online Banking System</h1>
+        <p class="leading-normal mb-4" style="font-size: medium;">
+            This is an Example web application created using django. You can find the sourse code on <a href="https://github.com/">GitHub</a>
+        </p>
+        <p style="font-size: medium;">We believe to satisfy our Coustomers Concern!</p>
+        <div style="align-items: baseline;">
+            <a href="create/" class="btn btn-primary" style="  margin: auto; width: 30%; font-size: medium;">Register</a>
+            <br> <br>
+            <a href="{% url 'cust_add_acct'%}" class="btn btn-primary" style="  margin: auto; width: 30%;  font-size: medium;">Add Account </a>
+            <br> <br>
+            <a href="login/" class="btn btn-primary" style="   margin: auto; width: 30%;  font-size: medium;">Login</a>
+        </div>
+    </div>
+    <!--Right Col-->
+    <div class="w-full lg:w-1/2 text-center">
+        <img src="https://economictimes.indiatimes.com/thumb/msid-73286109,width-1200,height-900,resizemode-4,imgsize-188264/bank-agencies1.jpg?from=mdr" class="container p-2 m-10" alt="There was an image!" style="border: 5px solid #555;">
+    </div>
+</div>
+
+
+{% endblock %}
