@@ -1,5 +1,1 @@
-Requirement are:
-Django (to install go to cmd and type pip install django)
-boostrap Framework
-python Language
-HTML, CSS and JS (not necessary)
+django==3.1.7
